@@ -2,10 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {
-  MatIconModule, MatTableModule, MatInputModule, MatSelectModule,
-  MatOptionModule, MatButtonModule, MatToolbarModule, MatPaginatorModule,
-  MatFormFieldModule, MatTooltipModule, MatDialogModule,MatDividerModule, MAT_DATE_LOCALE, 
-  MatCardModule,MatRadioModule,MatExpansionModule,MatDatepickerModule,MatNativeDateModule
+  MatIconModule, 
+  MatToolbarModule,
+  MatCardModule,
+  MatTabsModule,
+  MatSidenavModule,MatStepperModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatePipe } from '@angular/common';
@@ -27,23 +28,12 @@ import { RouterModule, Routes } from '@angular/router';
     HttpClientModule,
     HttpModule,
     MatIconModule, 
-    MatTableModule, 
-    MatInputModule, 
-    MatSelectModule,
-    MatOptionModule, 
-    MatButtonModule, 
     MatToolbarModule, 
-    MatPaginatorModule,
-    MatFormFieldModule, 
-    MatTooltipModule, 
-    MatDialogModule,
-    MatDividerModule,
-    MatRadioModule,
-    MatExpansionModule,
     MatCardModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
     BrowserAnimationsModule,
+    MatTabsModule,
+    MatSidenavModule,
+    MatStepperModule,
     FormsModule,
     ReactiveFormsModule,
     UiSwitchModule.forRoot({
@@ -62,7 +52,7 @@ import { RouterModule, Routes } from '@angular/router';
     NgxLoadingModule
   ],
   entryComponents: [AppComponent],
-  providers: [MatDatepickerModule,DatePipe,{provide: MAT_DATE_LOCALE, useValue: 'en-GB'}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,8 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {
+  MatIconModule, MatTableModule, MatInputModule, MatSelectModule,
+  MatOptionModule, MatButtonModule, MatToolbarModule, MatPaginatorModule,
+  MatFormFieldModule, MatTooltipModule, MatDialogModule,MatDividerModule, MAT_DATE_LOCALE, 
+  MatCardModule,MatRadioModule,MatExpansionModule,MatDatepickerModule,MatNativeDateModule
+} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatePipe } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UiSwitchModule } from 'ngx-ui-switch';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import {  ToastrModule } from 'ngx-toastr';
+import { NgxLoadingModule } from 'ngx-loading';
+import { RouterModule, Routes } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -10,9 +24,45 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    HttpModule,
+    MatIconModule, 
+    MatTableModule, 
+    MatInputModule, 
+    MatSelectModule,
+    MatOptionModule, 
+    MatButtonModule, 
+    MatToolbarModule, 
+    MatPaginatorModule,
+    MatFormFieldModule, 
+    MatTooltipModule, 
+    MatDialogModule,
+    MatDividerModule,
+    MatRadioModule,
+    MatExpansionModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    UiSwitchModule.forRoot({
+      size:'medium',
+      color: 'green',
+      defaultBgColor: 'red',
+      defaultBoColor : 'white',
+      checkedLabel: ' Yes ',
+      uncheckedLabel: ' No '
+    }),
+    ToastrModule.forRoot({
+      preventDuplicates: true,
+      timeOut:5000,
+      positionClass:"toast-bottom-center"
+    }),
+    NgxLoadingModule
   ],
-  providers: [],
+  entryComponents: [AppComponent],
+  providers: [MatDatepickerModule,DatePipe,{provide: MAT_DATE_LOCALE, useValue: 'en-GB'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

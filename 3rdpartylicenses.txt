@@ -88,13 +88,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/material/button
+@angular/material/icon
 
-@angular/material/datepicker
+@angular/material/stepper
 
-@angular/material/dialog
-
-@angular/material/tooltip
+@angular/material/tabs
 
 @angular/platform-browser
 MIT

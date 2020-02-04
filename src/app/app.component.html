@@ -6,9 +6,15 @@
         </div>
         <div class="col-md-10">
             <table>
-                <tr> <td> Sai Teja </td></tr>
-                <tr><td> saiteja@gamil.com </td></tr>
-                <tr><td> 0987654321 </td></tr>
+                <tr>
+                    <td> Sai Teja </td>
+                </tr>
+                <tr>
+                    <td> saiteja@gamil.com </td>
+                </tr>
+                <tr>
+                    <td> 0987654321 </td>
+                </tr>
             </table>
         </div>
 
@@ -18,17 +24,43 @@
         <div class="col-md-9">
             <mat-tab-group mat-stretch-tabs>
                 <mat-tab label="My Projects">
-                    <mat-vertical-stepper >
-                        <mat-step >
-                        first
+                    <mat-vertical-stepper>
+                        <mat-step label="Project 1">
+                            Project 1
                         </mat-step>
-                        <mat-step>
-                          second
+                        <mat-step label="Proejct 2">
+                            Project 2
+                            kjhgfdfghjklkjhgfdsdfghj
                         </mat-step>
-                      </mat-vertical-stepper>
+                    </mat-vertical-stepper>
                 </mat-tab>
                 <mat-tab label="My Blog"></mat-tab>
-                <mat-tab label="Skills"></mat-tab>
+                <mat-tab label="Skills">
+
+                    <mat-accordion>
+                        <mat-expansion-panel [expanded]="true">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                   Version Control
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <mat-list role="list">
+                                <mat-list-item role="listitem"> GIT </mat-list-item>
+                              </mat-list>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel [expanded]="true">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                   DEVOPS
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <mat-list role="list">
+                                <mat-list-item role="listitem"> Jenkins </mat-list-item>
+                              </mat-list>
+                        </mat-expansion-panel>
+                        
+                    </mat-accordion>
+                </mat-tab>
                 <mat-tab label="Experience"></mat-tab>
                 <mat-tab label="Contact"></mat-tab>
 
@@ -39,7 +71,14 @@
                 <h4> Overview </h4>
             </div>
             <div>
-                I am a DevOps engineer and I'm ready to Break the Development-Operations barrier and give you more time to innovate. As one Great Philosopher said "Only skill defines a person" and I found this skill in my self and chose This Stream which makes me happy and encourages me to do to more. A few months ago I have read the Blog regarding DevOps and got to know It is a unique and very good software development methodology. So at that time, I decided to try this handshake firm which makes the connection between development and operation And Today I can proudly say that I'm a DevOps engineer. I think I have sufficient knowledge and skill so I can work to break the barrier and automates the processes between software development and IT teams.
+                I am a DevOps engineer and I'm ready to Break the Development-Operations barrier and give you more time
+                to innovate. As one Great Philosopher said "Only skill defines a person" and I found this skill in my
+                self and chose This Stream which makes me happy and encourages me to do to more. A few months ago I have
+                read the Blog regarding DevOps and got to know It is a unique and very good software development
+                methodology. So at that time, I decided to try this handshake firm which makes the connection between
+                development and operation And Today I can proudly say that I'm a DevOps engineer. I think I have
+                sufficient knowledge and skill so I can work to break the barrier and automates the processes between
+                software development and IT teams.
             </div>
         </div>
     </div>

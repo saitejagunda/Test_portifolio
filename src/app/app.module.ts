@@ -6,7 +6,7 @@ import {
   MatToolbarModule,
   MatCardModule,
   MatTabsModule,
-  MatSidenavModule,MatStepperModule
+  MatSidenavModule,MatStepperModule,MatListModule,MatExpansionModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatePipe } from '@angular/common';
@@ -34,6 +34,8 @@ import { RouterModule, Routes } from '@angular/router';
     MatTabsModule,
     MatSidenavModule,
     MatStepperModule,
+    MatExpansionModule,
+    MatListModule,
     FormsModule,
     ReactiveFormsModule,
     UiSwitchModule.forRoot({
